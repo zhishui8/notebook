@@ -4,7 +4,11 @@
 
 
 
-# 运动学(master)
+<<<<<<< HEAD
+# 运动学(merge)
+=======
+# 运动学(controversial,feature)
+>>>>>>> feature1
 
 
 
