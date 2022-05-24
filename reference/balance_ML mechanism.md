@@ -302,3 +302,5 @@ Good Senteces
 + evaluate how humans interact with and perceive the assistance
 + Thereby, one goal could be to bring the body to a stable posture with zero linear and angular velocity. Another goal could be just to slow down the fall, such that the patient has more time to regain control, for example to bring the swing leg to the front after a stumble
 + A main advantage is that the criterion relies only on kinematics and does not require measurement of ground reaction forces (**XCoM**)
+
+test
