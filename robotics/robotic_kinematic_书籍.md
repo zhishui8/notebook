@@ -10,7 +10,7 @@
 
 ### 1.1 刚体位置的确定
 
-<img src="../../../AppData/Roaming/Typora/typora-user-images/image-20220329115150555.png" alt="image-20220329115150555" style="zoom:50%;" />  			刚体的位置可用刚体坐标系原点的矢径来刻画
+<img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746169.png" alt="image-20220329115150555" style="zoom:50%;" />  			刚体的位置可用刚体坐标系原点的矢径来刻画
 
 Q 在参考系$OXYZ$ 中的矢径 为$p+r$ 
 
@@ -22,11 +22,11 @@ Q 在参考系$OXYZ$ 中的矢径 为$p+r$
 
 方法：记刚体坐标系$O_1\xi\eta\zeta$ 坐标轴上的三个单位矢量 **n,o,a** 在参考坐标系$OXYZ$（简称系0）中的坐标表达式
 
-![image-20220329122155545](../../../AppData/Roaming/Typora/typora-user-images/image-20220329122155545.png) 
+![image-20220329122155545](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746171.png) 
 
 则可以用3×3矩阵进行表达
 
-![image-20220329122226586](../../../AppData/Roaming/Typora/typora-user-images/image-20220329122226586.png) 
+![image-20220329122226586](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746172.png) 
 
 来表示**刚体**相对于**参考坐标系**的指向
 
@@ -34,7 +34,7 @@ Q 在参考系$OXYZ$ 中的矢径 为$p+r$
 
 + 若记$X,Y,Z$ 轴上的单位矢量为$x,y,z$ 则
 
-![image-20220329122710837](../../../AppData/Roaming/Typora/typora-user-images/image-20220329122710837.png)
+![image-20220329122710837](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746173.png)
 
 故矩阵 $^{0}R_1$ 又称为系1(即坐标系$O_1\xi\eta\zeta$) 相较于系0($OXYZ$) 的方向余弦矩阵
 
@@ -46,11 +46,11 @@ Q 在参考系$OXYZ$ 中的矢径 为$p+r$
 
 证明如下
 
-![image-20220329123642138](../../../AppData/Roaming/Typora/typora-user-images/image-20220329123642138.png) 
+![image-20220329123642138](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746174.png) 
 
-![image-20220329123716625](../../../AppData/Roaming/Typora/typora-user-images/image-20220329123716625.png) 
+![image-20220329123716625](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746175.png) 
 
-![image-20220329123728675](../../../AppData/Roaming/Typora/typora-user-images/image-20220329123728675.png) 
+![image-20220329123728675](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746176.png) 
 
 + $^{0}R_1$ 是正交矩阵，即有$(^{0}R_1)^{-1}$ = $(^{0}R_1)^{T}$ , 亦即 $^{0}R_1 = (^{1}R_0)^T$
 
@@ -60,11 +60,11 @@ Q 在参考系$OXYZ$ 中的矢径 为$p+r$
 
 新的坐标系1，可以看作是坐标系0绕着过系0原点的一轴转动一个角度后得到的。其表示方法如下
 
-![image-20220329124714844](../../../AppData/Roaming/Typora/typora-user-images/image-20220329124714844.png)  
+![image-20220329124714844](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746177.png)  
 
 其中单位矢量$k$在系0中的表达为$^{0}k=[k_x,k_y,k_Z]^T$ ,$\theta$ 是旋转角度 ，$S(^0k)$ 定义如下，其称之为$^{0}k$所对应的叉乘矩阵$S(^0k)^0b=^0k×^0b$ 
 
-![image-20220329124936600](../../../AppData/Roaming/Typora/typora-user-images/image-20220329124936600.png)
+![image-20220329124936600](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746178.png)
 
 #### 1.3.2 旋转矩阵
 
@@ -74,19 +74,19 @@ $^0R_1$ 除了称之为**系1(即坐标系$O_1\xi\eta\zeta$) 相较于系0($OXYZ
 
 **理解思路** ：建立坐标系1与矢量b固连，且初始时与系0重合，并随着b相同转动。当转动完成时从系0到系1的转动可用旋转矩阵$^0R_1$进行表示。进而表示如下。这个公式也同时说明了它是矢量旋转前后的坐标表达式间的变化矩阵
 
-![image-20220329130214737](../../../AppData/Roaming/Typora/typora-user-images/image-20220329130214737.png)
+![image-20220329130214737](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746179.png)
 
 #### 1.3.3 基本旋转矩阵
 
 绕坐标轴转动称之为基本转动
 
-![image-20220329130753675](../../../AppData/Roaming/Typora/typora-user-images/image-20220329130753675.png)
+![image-20220329130753675](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746180.png)
 
 #### 1.3.4 连续相对转动的合成
 
 即每次转动都是相对前一坐标系，记$^0R_1$ 为系0 到系1的旋转矩阵，$^1R_2$ 为系1到系2的旋转矩阵
 
-![image-20220329131100558](../../../AppData/Roaming/Typora/typora-user-images/image-20220329131100558.png) 
+![image-20220329131100558](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746181.png) 
 
 **结论** ：连续相对转动的旋转矩阵可以按照相对转动的次序**连续右乘**各次转动的旋转矩阵来得到（类似于机械臂）
 
@@ -94,11 +94,11 @@ $^0R_1$ 除了称之为**系1(即坐标系$O_1\xi\eta\zeta$) 相较于系0($OXYZ
 
 任何一个指定指向均可由三个连续的绕坐标轴旋的相对转动得到，即任何一个方向余弦矩阵等于三个基本旋转矩阵的乘积，这三个基本旋转矩阵称之为欧拉角
 
-![image-20220329141520094](../../../AppData/Roaming/Typora/typora-user-images/image-20220329141520094.png)
+![image-20220329141520094](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746182.png)
 
 
 
-![image-20220329141540012](../../../AppData/Roaming/Typora/typora-user-images/image-20220329141540012.png)
+![image-20220329141540012](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746183.png)
 
 三次转动的轴的选取和顺序至关重要
 
@@ -106,15 +106,15 @@ $^0R_1$ 除了称之为**系1(即坐标系$O_1\xi\eta\zeta$) 相较于系0($OXYZ
 
 （1）点在不同坐标系下的坐标变化
 
-![image-20220329142132227](../../../AppData/Roaming/Typora/typora-user-images/image-20220329142132227.png) 
+![image-20220329142132227](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746184.png) 
 
-![image-20220329142154918](../../../AppData/Roaming/Typora/typora-user-images/image-20220329142154918.png)
+![image-20220329142154918](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746185.png)
 
 
 
 （2） 齐次变化矩阵
 
-<img src="../../../AppData/Roaming/Typora/typora-user-images/image-20220329142318334.png" alt="image-20220329142318334" style="zoom:67%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746186.png" alt="image-20220329142318334" style="zoom:67%;" />
 
 记点Q在系0，系1和系2中的坐标分别为$^0r,^1r和^2r$ ,则由
 
@@ -124,7 +124,7 @@ $^0r = ^{0}p+^0R_1{^1r}$             $^1r = ^{1}p_2+^1R_2{^2r}$
 
 $^0r = ^{0}p+^0R_1({^{1}p_2+^1R_2{^2r}}) =^{0}p +^0R_1{^{1}p_2}+^0R_1{^1R_2{^2r}} $                                       **(1-5)**
 
-<img src="../../../AppData/Roaming/Typora/typora-user-images/image-20220329143010407.png" alt="image-20220329143010407" style="zoom:67%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746187.png" alt="image-20220329143010407" style="zoom:67%;" />
 
 简记为 **$^0r=^0A_1{^1R}$**             $^0A_1$  4×4矩阵即为从系0到系1的齐次变化矩阵
 
@@ -148,11 +148,11 @@ $^0r = ^{0}p+^0R_1({^{1}p_2+^1R_2{^2r}}) =^{0}p +^0R_1{^{1}p_2}+^0R_1{^1R_2{^2r}
 
 + 连续相对运动的齐次变化矩阵可按照相对运动次序连续右乘得到
 
-  <img src="../../../AppData/Roaming/Typora/typora-user-images/image-20220329145639038.png" alt="image-20220329145639038" style="zoom:67%;" />
+  <img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746188.png" alt="image-20220329145639038" style="zoom:67%;" />
 
 + 齐次变化矩阵的逆
 
-  <img src="../../../AppData/Roaming/Typora/typora-user-images/image-20220329145754880.png" alt="image-20220329145754880" style="zoom:67%;" />
+  <img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746189.png" alt="image-20220329145754880" style="zoom:67%;" />
 
 
 
@@ -185,13 +185,13 @@ $^0r = ^{0}p+^0R_1({^{1}p_2+^1R_2{^2r}}) =^{0}p +^0R_1{^{1}p_2}+^0R_1{^1R_2{^2r}
 + 关节距离$d_i$ 定义为$X_{i-1}轴到X_i$的距离， 沿着$Z_{i-1}$的指向为正
 + 关节转角$\theta_i$ 定义为$X_{i-1}轴到X_i$的转动， 沿着$Z_{i-1}$的X正向转动为正，且规定$-\pi<\alpha_i<\pi$  
 
-<img src="../../../AppData/Roaming/Typora/typora-user-images/image-20220329154302824.png" alt="image-20220329154302824" style="zoom:50%;" /> 
+<img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746190.png" alt="image-20220329154302824" style="zoom:50%;" /> 
 
 #### 2.2.3 用DH参数确定坐标系间的齐次变换矩阵
 
 沿着$z_{i-1}$ 轴移动 $d_i$ ,绕着$z_{i-1}$ 转动$\theta_i$ ,沿着$x_i$轴移动$a_i$ ,绕着 $x_i$转动$\alpha_i$ 
 
-![image-20220329155359249](../../../AppData/Roaming/Typora/typora-user-images/image-20220329155359249.png)
+![image-20220329155359249](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746191.png)
 
 
 
@@ -219,7 +219,7 @@ $^0r = ^{0}p+^0R_1({^{1}p_2+^1R_2{^2r}}) =^{0}p +^0R_1{^{1}p_2}+^0R_1{^1R_2{^2r}
 
 ### 3.2 正运动学解法
 
-<img src="../../../AppData/Roaming/Typora/typora-user-images/image-20220329162135639.png" alt="image-20220329162135639" style="zoom:67%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746192.png" alt="image-20220329162135639" style="zoom:67%;" />
 
 **$q_i$是关节i角度的变化,对应的是$z_{i-1}$轴的角度变化，所以是$^{i-1}A_i$  **  
 
@@ -231,9 +231,9 @@ $^0r = ^{0}p+^0R_1({^{1}p_2+^1R_2{^2r}}) =^{0}p +^0R_1{^{1}p_2}+^0R_1{^1R_2{^2r}
 
 **eg Stanford臂 解法**
 
-<img src="../../../AppData/Roaming/Typora/typora-user-images/image-20220329162526545.png" alt="image-20220329162526545" style="zoom:50%;" /><img src="../../../AppData/Roaming/Typora/typora-user-images/image-20220329162637632.png" alt="image-20220329162637632" style="zoom:50%;" /> 
+<img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746193.png" alt="image-20220329162526545" style="zoom:50%;" /><img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746194.png" alt="image-20220329162637632" style="zoom:50%;" /> 
 
-![image-20220329162653693](../../../AppData/Roaming/Typora/typora-user-images/image-20220329162653693.png) 
+![image-20220329162653693](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746195.png) 
 
 
 
@@ -271,11 +271,11 @@ $\dot{ ^0A_n}= \left[\matrix{\dot{^0R_n} & \dot{p_n}\\ 0&1}\right]$
 
 但是转动的角速度可以用矢量表示
 
-<img src="../../../AppData/Roaming/Typora/typora-user-images/image-20220329224657357.png" alt="image-20220329224657357" style="zoom:50%;" /> <img src="../../../AppData/Roaming/Typora/typora-user-images/image-20220329224713045.png" alt="image-20220329224713045" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746196.png" alt="image-20220329224657357" style="zoom:50%;" /> <img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746197.png" alt="image-20220329224713045" style="zoom:50%;" />
 
 
 
-由叉乘矩阵与三维矢量一一对应可知，此转动的时间变化率可用矢量$\dot{\theta}k$ 表示，记为$\omega$ ,其满足矢量的交换律![image-20220329225225945](../../../AppData/Roaming/Typora/typora-user-images/image-20220329225225945.png)
+由叉乘矩阵与三维矢量一一对应可知，此转动的时间变化率可用矢量$\dot{\theta}k$ 表示，记为$\omega$ ,其满足矢量的交换律![image-20220329225225945](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746198.png)
 
 
 
@@ -317,11 +317,11 @@ $\frac{d}{dq_i}^{i-1}A_i = \hat{\sigma}\frac{d}{d\theta}^{i-1}A_i(\theta_i) + \s
 
 其中
 
-<img src="image-20220330110825567.png" alt="image-20220330110825567" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746199.png" alt="image-20220330110825567" style="zoom:50%;" />
 
 
 
-所以![image-20220330110916885](image-20220330110916885.png)
+所以![image-20220330110916885](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746200.png)
 
 $\frac{d}{dq_i}^{i-1}A_i = Q_i$
 
@@ -341,7 +341,7 @@ $\dot{^ 0A_n} =\sum_{i=1}^{n}{^0A_{i-1}}{Q_i}^{i-1}A_n\dot q_i $
 
 **递推公式**
 
-<img src="image-20220330112142110.png" alt="image-20220330112142110" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746201.png" alt="image-20220330112142110" style="zoom:80%;" />
 
 
 
@@ -357,19 +357,19 @@ $\dot{^ 0A_n} =\sum_{i=1}^{n}{^0A_{i-1}}{Q_i}^{i-1}A_n\dot q_i $
 
   + 直接利用矢量力学公式求解
 
-    <img src="image-20220330114721200.png" alt="image-20220330114721200" style="zoom:80%;" />
+    <img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746202.png" alt="image-20220330114721200" style="zoom:80%;" />
 
     **对于任意旋转矩阵R和矢量a,均有$RS(a)R^T = S(Ra)$ ,再考虑到$Z_{i-1}$ 轴上的单位矢量$z_{i-1}$ 在系0中的坐标$z_{i-1} = ^0R_1z$**
 
     
 
-    <img src="image-20220330114744475.png" alt="image-20220330114744475" style="zoom:80%;" />
+    <img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746203.png" alt="image-20220330114744475" style="zoom:80%;" />
 
-    ![image-20220330130630521](image-20220330130630521.png)
+    ![image-20220330130630521](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746204.png)
 
-    ![image-20220330130939349](image-20220330130939349.png)
+    ![image-20220330130939349](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746205.png)
 
-    ![image-20220330130955605](image-20220330130955605.png)
+    ![image-20220330130955605](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746206.png)
 
     
 
@@ -379,17 +379,17 @@ $\dot{^ 0A_n} =\sum_{i=1}^{n}{^0A_{i-1}}{Q_i}^{i-1}A_n\dot q_i $
 
 #### 4.2.3 机器人的雅可比矩阵
 
-![image-20220330132448353](image-20220330132448353.png)
+![image-20220330132448353](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746207.png)
 
-![image-20220330132504681](image-20220330132504681.png)
+![image-20220330132504681](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746208.png)
 
-![image-20220330132546960](image-20220330132546960.png)
-
-
+![image-20220330132546960](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746209.png)
 
 
 
-![image-20220330132637755](image-20220330132637755.png)
+
+
+![image-20220330132637755](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746210.png)
 
 **ps**：由式1-59知，雅可比矩阵的第i列$J_i由z_{i-1},p_{i-1}和p_n$ 共同组成，而$z_{i-1}$是$^{0}A_{i-1}$中第三列的前三行，$p_{n-1} 和 p_{n}$ 分别时$^0A_{n-1} 和^0A_{n}$第四列的前三行
 
@@ -401,7 +401,7 @@ $\dot{^ 0A_n} =\sum_{i=1}^{n}{^0A_{i-1}}{Q_i}^{i-1}A_n\dot q_i $
 
 说明：逆速度问题时，一般不研究齐次变换矩阵表示的逆速度问题（已知$q及\dot{^0A_n}$,求$\dot q$） ,原因是$\dot p_n = v_n$，以及
 
-![image-20220330140828156](image-20220330140828156.png)
+![image-20220330140828156](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746211.png)
 
 立即可由$\dot{^0A_n}$确定出$\omega_n,v_n$
 
@@ -413,7 +413,7 @@ $\left[\matrix{v_n\\\omega_n}\right] = J(q)\dot q$
 
 其中$J\in R^{6*n}$ ,由线性方程组值逆速度问题对给定任意$w_n,v_n$,都有解的必要条件是
 
-<img src="image-20220330142024644.png" alt="image-20220330142024644" style="zoom:80%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746212.png" alt="image-20220330142024644" style="zoom:80%;" />
 
 **这表明：对任给的$w_n$和 $v_n$，逆速度均有解的前提是机器人自由度大于 n≥6**
 
@@ -439,7 +439,7 @@ $$
 
   
 
-  ![image-20220330144646269](image-20220330144646269.png)
+  ![image-20220330144646269](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746213.png)
 
    
 
@@ -451,9 +451,9 @@ $$
 
   
 
-  <img src="image-20220330145754697.png" alt="image-20220330145754697" style="zoom:80%;" />
+  <img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746214.png" alt="image-20220330145754697" style="zoom:80%;" />
 
-  ![image-20220330145811108](image-20220330145811108.png)
+  ![image-20220330145811108](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746215.png)
 
 #### 4.2.5 机器人奇异位置及特点
 
@@ -465,21 +465,21 @@ $$
 
 ##### 解耦
 
-![image-20220330151450667](image-20220330151450667.png)
+![image-20220330151450667](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746216.png)
 
-![image-20220330151509124](image-20220330151509124.png)
+![image-20220330151509124](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746217.png)
 
-![image-20220330151521560](image-20220330151521560.png)
+![image-20220330151521560](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746218.png)
 
 **例子**
 
-![image-20220330151546420](image-20220330151546420.png)
+![image-20220330151546420](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746219.png)
 
-![image-20220330151600301](image-20220330151600301.png)
+![image-20220330151600301](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746220.png)
 
-![image-20220330151617246](image-20220330151617246.png)
+![image-20220330151617246](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746221.png)
 
-![image-20220330151626525](image-20220330151626525.png)
+![image-20220330151626525](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746222.png)
 
 ## 5 加速度问题
 
@@ -491,11 +491,11 @@ $$
 
 ​	**已知$q,\dot q,\ddot  q$ ,求对应的$\ddot {^0A_n}$** 
 
-![image-20220330153547485](image-20220330153547485.png)
+![image-20220330153547485](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746223.png)
 
 对上式进行二次求导
 
-![image-20220330153611833](image-20220330153611833.png)。
+![image-20220330153611833](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746224.png)。
 
 这样第四节中求出的$\dot {^0A_i}与{^0A_i}$ 的递推公式与1-67共同构成 了用齐次变化矩阵构成表示的正加速度公式
 
@@ -507,17 +507,17 @@ $$
 
 ​	**已知$q,\dot q,\ddot  q$ ,求对应的角加速度$\dot\omega_n和 \dot v_n$**   
 
-<img src="image-20220330154219946.png" alt="image-20220330154219946" style="zoom:67%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746225.png" alt="image-20220330154219946" style="zoom:67%;" />
 
 对1-51二次求导得
 
-![image-20220330154728756](image-20220330154728756.png)
+![image-20220330154728756](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746226.png)
 
-![image-20220330154825336](image-20220330154825336.png)
+![image-20220330154825336](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746227.png)
 
-![image-20220330155125612](image-20220330155125612.png)
+![image-20220330155125612](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746228.png)
 
-![image-20220330155155594](image-20220330155155594.png) 
+![image-20220330155155594](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746229.png) 
 
 
 
@@ -531,7 +531,7 @@ $$
 
 #### 5.2.2逆加速度解法
 
-![image-20220330160308814](image-20220330160308814.png)
+![image-20220330160308814](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746230.png)
 
-![image-20220330160319346](image-20220330160319346.png)
+![image-20220330160319346](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241746231.png)
 

@@ -10,7 +10,7 @@
 
 **运动学参数** ： 减速比 DH参数（通常其精度够用了，不需要辨识）
 
-<img src="image-20220426103155841.png" alt="image-20220426103155841" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241805378.png" alt="image-20220426103155841" style="zoom:50%;" />
 
 动力学参数： 最小惯性参数集
 $$
@@ -18,7 +18,7 @@ $$
 $$
 参数辨识方法：
 
-<img src="image-20220426103618538.png" alt="image-20220426103618538" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241805379.png" alt="image-20220426103618538" style="zoom:50%;" />
 
 # 2 系统辨识基础
 
@@ -26,7 +26,7 @@ $$
 
 $\tau = Y_r p_r$ 
 
-<img src="image-20220426104134347.png" alt="image-20220426104134347" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241805380.png" alt="image-20220426104134347" style="zoom:50%;" />
 
 最小二乘具有很强的收敛性
 
@@ -34,19 +34,19 @@ $\tau = Y_r p_r$
 
 ### 2.2.1 最小二乘
 
-<img src="image-20220426104726865.png" alt="image-20220426104726865" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241805381.png" alt="image-20220426104726865" style="zoom:50%;" />
 
 前提是高斯白噪声，才能确保是无偏估计
 
-![image-20220426110216912](image-20220426110216912.png)
+![image-20220426110216912](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241805382.png)
 
 ### 2.2.2 递推最小二乘，在线辨识减少运算量
 
-<img src="image-20220426110424570.png" alt="image-20220426110424570" style="zoom:67%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241805383.png" alt="image-20220426110424570" style="zoom:67%;" />
 
 ### 2.2.3 噪声影响
 
-<img src="image-20220426111614155.png" alt="image-20220426111614155" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241805384.png" alt="image-20220426111614155" style="zoom:50%;" />
 
 速度可以通过直接差分获取，加速度需要滤波处理
 
@@ -56,13 +56,13 @@ $\tau = Y_r p_r$
 
 低通滤波器
 
-<img src="image-20220426112251984.png" alt="image-20220426112251984" style="zoom:50%;" /> 
+<img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241805385.png" alt="image-20220426112251984" style="zoom:50%;" /> 
 
 电路就是模拟滤波器（改起来麻烦）
 
 离散系统实现
 
-<img src="image-20220426112451942.png" alt="image-20220426112451942" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241805386.png" alt="image-20220426112451942" style="zoom:50%;" />
 
 
 
@@ -70,7 +70,7 @@ Tips: 滤波会必然引入延时，导致数据串掉，没法对其位移，�
 
 ### 2.2.5 离线滤波与在线并行滤波
 
-<img src="image-20220426112844884.png" alt="image-20220426112844884" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241805387.png" alt="image-20220426112844884" style="zoom:50%;" />
 
 两种都是好方法，一般都是采集完所有数据在进行滤波进行辨识，所以可以用filtfilt函数进行辨识，消灭延时
 
@@ -80,11 +80,11 @@ Tips: 滤波会必然引入延时，导致数据串掉，没法对其位移，�
 
 
 
-![image-20220426114709457](image-20220426114709457.png)
+![image-20220426114709457](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241805388.png)
 
 **力矩信号获取**
 
-![image-20220426114936962](image-20220426114936962.png)
+![image-20220426114936962](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241805389.png)
 
 
 
@@ -92,15 +92,15 @@ Tips: 滤波会必然引入延时，导致数据串掉，没法对其位移，�
 
 采样过程发生时：A/D 信号转化需要时间，信号在该时间段保持不变
 
-<img src="image-20220426120043098.png" alt="image-20220426120043098" style="zoom:33%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241805390.png" alt="image-20220426120043098" style="zoom:33%;" />
 
 离散信号采样相较于连续信号（原始信号）会有ts/2的延迟，所以得使用奈奎斯特采样定理（2*fs）
 
-eg: <img src="image-20220426120521530.png" alt="image-20220426120521530" style="zoom:50%;" />
+eg: <img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241805391.png" alt="image-20220426120521530" style="zoom:50%;" />
 
 ### 2.2.7 连续系统和离散系统的系统辨识
 
-![image-20220426120852248](image-20220426120852248.png)
+![image-20220426120852248](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241805392.png)
 
 Tips：离散系统不需要速度，加速度量，只是需要位置参数，通过离散化，但是要注意dt其实包含在系数里
 
@@ -112,7 +112,7 @@ Tips：离散系统不需要速度，加速度量，只是需要位置参数，�
 
 当解集x对A和b的系数高度敏感，那么这样的方程组就是病态的
 
-eg:<img src="image-20220426122021463.png" alt="image-20220426122021463" style="zoom:50%;" />.
+eg:<img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241805393.png" alt="image-20220426122021463" style="zoom:50%;" />.
 
 评价指标: matlab conda
 
@@ -120,9 +120,9 @@ eg:<img src="image-20220426122021463.png" alt="image-20220426122021463" style="z
 
 转化为优化问题，通过若干阶傅里叶级数生成轨迹，降低conda值
 
-<img src="image-20220426122353985.png" alt="image-20220426122353985" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241805394.png" alt="image-20220426122353985" style="zoom:50%;" />
 
-<img src="image-20220426122448761.png" alt="image-20220426122448761" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241805395.png" alt="image-20220426122448761" style="zoom:50%;" />
 
 tips: 低速，避免激发关节柔性
 
@@ -136,17 +136,17 @@ tips: 低速，避免激发关节柔性
 
 单自由度连续系统辨识
 
-![image-20220426133201531](image-20220426133201531.png)
+![image-20220426133201531](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241805396.png)
 
 
 
 设置激励轨迹
 
-<img src="image-20220426133323625.png" alt="image-20220426133323625" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241805397.png" alt="image-20220426133323625" style="zoom:50%;" />
 
 噪声影响（当某项所占比越小，该值估计越不稳定）
 
-![image-20220426133420459" style="zoom:50%;"](image-20220426133420459.png)
+![image-20220426133420459" style="zoom:50%;"](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241805398.png)
 
 转速影响：会引起尖峰
 
@@ -154,4 +154,4 @@ tips: 低速，避免激发关节柔性
 
 单自由度离散系统辨识
 
-<img src="image-20220426134008430.png" alt="image-20220426134008430" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241805399.png" alt="image-20220426134008430" style="zoom:50%;" />

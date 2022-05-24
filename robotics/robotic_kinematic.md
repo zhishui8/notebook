@@ -1,22 +1,11 @@
-
-
-
-
-
-
-<<<<<<< HEAD
-# 运动学(merge)
-=======
-# 运动学(controversial,feature)
->>>>>>> feature1
-
+# 运动学(merge)15f683b6d4d701e9e24d07cdd86e7c94
 
 
 ## 1 旋转运动学
 
 
 
-![](.\figure\4a0cbd2a056f2244a040f0ccc6d8dc0.png)
+![](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241744146.png)
 
 
 
@@ -28,7 +17,7 @@
 $$
 ^{G}r = Q_{Z,\alpha}{^{B}r}
 $$
-![image-20220323210059991](../../../AppData/Roaming/Typora/typora-user-images/image-20220323210059991.png)
+![image-20220323210059991](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241744147.png)
 
 
 
@@ -41,7 +30,7 @@ $$
 
 **证明**
 
-![image-20220323212010908](../../../AppData/Roaming/Typora/typora-user-images/image-20220323212010908.png)
+![image-20220323212010908](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241744148.png)
 
 
 
@@ -77,7 +66,7 @@ $X$ 的具体数值 可以看作是局部坐标系下三个轴分量$xyz$ 分别
 
 $^{G}Q{_B} = Q_{Z, \gamma} Q_{Y, \beta} Q_{X, \alpha}$ 
 
-![image-20220323233626227](../../../AppData/Roaming/Typora/typora-user-images/image-20220323233626227.png)
+![image-20220323233626227](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241744149.png)
 
 
 
@@ -129,11 +118,11 @@ $\textcolor{red}{根据这本书，貌似绕全局和局部坐标轴旋转并没
 
 **$^{A}_{B}R$ 描述B相对于A的姿态**
 
-![](../../../AppData/Roaming/Typora/typora-user-images/image-20220324165811273.png)
+![](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241744150.png)
 
-![image-20220324165918839](../../../AppData/Roaming/Typora/typora-user-images/image-20220324165918839.png)
+![image-20220324165918839](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241744151.png)
 
-![image-20220324170038777](../../../AppData/Roaming/Typora/typora-user-images/image-20220324170038777.png)
+![image-20220324170038777](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241744152.png)
 
 ​							**每一列相当于从B坐标系的某个轴在A坐标系下每个轴的投影 **
 
@@ -141,7 +130,7 @@ $\textcolor{red}{根据这本书，貌似绕全局和局部坐标轴旋转并没
 
 **eg** 
 
-![image-20220324170711908](../../../AppData/Roaming/Typora/typora-user-images/image-20220324170711908.png)  新的坐标系的每个轴在旧的坐标轴三个轴上的投影
+![image-20220324170711908](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241744153.png)  新的坐标系的每个轴在旧的坐标轴三个轴上的投影
 
 
 
@@ -159,7 +148,7 @@ $^{A}_{B}R = ^{B}_{A}R^T$
 
 
 
-![image-20220324171743214](../../../AppData/Roaming/Typora/typora-user-images/image-20220324171743214.png)
+![image-20220324171743214](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241744154.png)
 
 ### 描述物体转动的状态
 
@@ -177,7 +166,7 @@ $^{A}_{B}R = ^{B}_{A}R^T$
 
 + **描述向量在同一个坐标系下转动后的坐标**
 
-  ![image-20220324213759636](../../../AppData/Roaming/Typora/typora-user-images/image-20220324213759636.png)
+  ![image-20220324213759636](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241744155.png)
 
   #### 2.矩阵的旋转
 
@@ -195,7 +184,7 @@ $^{A}_{B}R = ^{B}_{A}R^T$
 
 + 根据旋转矩阵反推转动的角度
 
-  ![image-20220324221704988](../../../AppData/Roaming/Typora/typora-user-images/image-20220324221704988.png)
+  ![image-20220324221704988](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241744157.png)
 
   ##### 2.2 绕 局部坐标系进行旋转
 
@@ -213,7 +202,7 @@ $^{A}_{B}R = ^{B}_{A}R^T$
 
   下述只是zyz旋转方法，同一向量可以由不同旋转方式得到，只要最后得到下面旋转矩阵可以通过ZYZ旋转得到
 
-  ![image-20220324230847163](../../../AppData/Roaming/Typora/typora-user-images/image-20220324230847163.png) 
+  ![image-20220324230847163](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241744158.png) 
 
 #####   $$\textcolor{red}{绕着固定轴旋转，先旋转的与向量最近，其逻辑是每次相乘都是重新转化为全局坐标系下，所以是绕着固定轴进行旋转；}$$ 
 
@@ -227,7 +216,7 @@ $^{A}_{B}R = ^{B}_{A}R^T$
 
 上图均是**B相对A**的**转动**以及相对于A的**空间位置**
 
-![image-20220325111746185](../../../AppData/Roaming/Typora/typora-user-images/image-20220325111746185.png)
+![image-20220325111746185](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241744159.png)
 
 **理解成 两个坐标系首先是固连在一起的，参考坐标系B带着P点旋转，旋转后的P点在固连坐标系的表达 $^{A}_{B}R*^{B}P$** **,随后P点和参考坐标系B相对A进行平移 所以 加上 $^{A}P_{B Org}$** **（即B原点相较于A的平移位置）**
 
@@ -237,7 +226,7 @@ $^{A}_{B}R = ^{B}_{A}R^T$
 
 #### 2.2连续运算
 
-![image-20220325120947148](../../../AppData/Roaming/Typora/typora-user-images/image-20220325120947148.png) 
+![image-20220325120947148](https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241744160.png) 
 
 $^{C}P$ 在坐标系A下的表达其本质还是向量相加，向量的数值表达加减只有在同一基坐标系下才有效
 
@@ -265,7 +254,7 @@ mapping 意味着绕局部坐标系旋转 先旋转的放前面  这样往左乘
 
 + 多杆串联 需要$d_i,\theta_i$ 描述$a_i,a_{i-1}$ 之间的相对关系 
 
-  <img src="../../../AppData/Roaming/Typora/typora-user-images/image-20220325143115596.png" alt="image-20220325143115596" style="zoom:50%;" />  
+  <img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241744161.png" alt="image-20220325143115596" style="zoom:50%;" />  
 
 + 分析第一个杆件和最后一个杆件的特殊处理方式
 
@@ -288,13 +277,13 @@ mapping 意味着绕局部坐标系旋转 先旋转的放前面  这样往左乘
 
     **mapping 以第n个坐标系表达， 逐步回溯到以第n-1个坐标系下表达**
 
-<img src="../../../AppData/Roaming/Typora/typora-user-images/image-20220325154039149.png" alt="image-20220325154039149" style="zoom:50%;" />
+<img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241744162.png" alt="image-20220325154039149" style="zoom:50%;" />
 
 
 
 **eg**
 
-<img src="../../../AppData/Roaming/Typora/typora-user-images/image-20220325154409684.png" alt="image-20220325154409684" style="zoom:50%;" />   
+<img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241744163.png" alt="image-20220325154409684" style="zoom:50%;" />   
 
 |      | $\alpha_{n-1}$ | $a_{n-1}$ | $\theta_n$ | $d_n$ |
 | ---- | -------------- | --------- | ---------- | ----- |
@@ -302,7 +291,7 @@ mapping 意味着绕局部坐标系旋转 先旋转的放前面  这样往左乘
 | L_2  | 0              | L1        | $\theta_2$ | 0     |
 | L_3  | 0              | L2        | $\theta_3$ | 0     |
 
-<img src="../../../AppData/Roaming/Typora/typora-user-images/image-20220325155609702.png" alt="image-20220325155609702" style="zoom:50%;" /> 
+<img src="https://cdn.jsdelivr.net/gh/zhishui8/figure/img/202205241744164.png" alt="image-20220325155609702" style="zoom:50%;" /> 
 
 |      | $\alpha_{n-1}$ | $a_{n-1}$ | $\theta_n$ | $d_n$ |
 | ---- | -------------- | --------- | ---------- | ----- |
